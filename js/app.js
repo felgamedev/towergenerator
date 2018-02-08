@@ -183,6 +183,8 @@ function writeToDocument(){
 
   towerObject.drawTower();
 
+  numRooms.textContent = towerObject.numberOfRooms;
+  numFloors.textContent = towerObject.numberOfFloors;
 
 }
 
