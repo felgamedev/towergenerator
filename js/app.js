@@ -282,6 +282,16 @@ var data = {
     "Cursed", "Enchanted", "Lost", "Forbidden"
   ],
 
+  // Room types
+  roomTypes: [
+    {name: "hall", description: "a room that connects to other rooms", weight: 1},
+    {name: "kitchen", description: "a room for storing, preparing and cooking food", weight: 1},
+    {name: "living room", description: "a relaxing space with comfortable seating", weight: 1},
+    {name: "bedroom", description: "a place to sleep", weight: 1},
+    {name: "closet", description: "a small room for storage", weight: 1},
+    {name: "bathroom", description: "a place to take care of nature's call", weight: 1},
+  ],
+
   // Furniture
   core : {
     bathroom : {
