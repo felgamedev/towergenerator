@@ -1,0 +1,81 @@
+.tower-level {
+  background: DarkGray;
+  border: 2px solid Black;
+}
+
+.reroll-button {
+  display: inline-block;
+  padding: 10px;
+  background: lightpink;
+  color: white;
+  text-transform:uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.legal_text {
+  font-size: small;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: small;
+}
+
+.towerHeading {
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Amatic SC', cursive;
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: solid red 1px;
+  margin: auto;
+}
+
+.mainColumn {
+  width: 60%;
+}
+
+.sidebarColumn {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.drawnTower {
+  min-width: 100%;
+}
+
+table td {
+  text-align: center;
+  display:inline-block;
+  border: solid 2px red;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.towerRoomEmpty {
+  display:inline-block;
+  border: solid 2px red;
+  min-width: 50px;
+  min-height: 50px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:700" rel="stylesheet">
+
+    <title>Tower Generator</title>
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Tower Generator</h1>
+      <p class="subtitle">Random tower mode, custom mode coming soon!</p>
+      <div class="reroll-button" onclick="writeToDocument();">Reroll</div>
+    </header>
+
+    <main>
+      <h1 class="towerHeading" id="towerName">Tower Name</h1>
+
+
+      <div class="mainColumn">
+        <div id="towerAppearance" class="drawnTower">
+          --Draw Tower Here--
+        </div>
+      </div>
+
+      <div class="sidebarColumn">
+        <div id="tower-description">
+          <h2>Tower Description</h2>
+          <ul>
+            <li>Floors: <span id="numOfFloors">numFloors</span></li>
+            <li>Rooms: <span id="numOfRooms">numRooms</span></li>
+            <li>Style: <span id="towerStyle">towerStyle</span></li>
+          </ul>
+        </div>
+
+        <h2>Wealth Level</h2>
+        <div id="wealthLevel">
+        </div>
+
+        <h2>Occupant Description</h2>
+        <div id="occupant-background" class="">
+            <p>Occupant description here: "This is the tale of a princess named..." etc</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="layout_footer">
+          <p class="legal_text">
+            This generator is the work of Scott Hampton, <a href="mailto:adanoidz@hotmail.com">email me</a> anytime :)
+          </p>
+        </div>
+    </footer>
+    <script type="text/Javascript" src="js/app.js"></script>
+
+  </body>
+</html>
