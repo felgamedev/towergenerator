@@ -1,4 +1,7 @@
 var random = new Random();
+const numFloors = document.querySelector("#numOfFloors");
+const numRooms = document.querySelector("#numOfRooms");
+const towerStyle = document.querySelector("#towerStyle");
 
 // Tower Object blueprint
 function Tower(){
