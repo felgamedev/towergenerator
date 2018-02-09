@@ -15,11 +15,13 @@ function Tower(){
   // Generate a name for the tower, also selects a name for the original occupier
   this.generateName = function(){
     // Generate a new name for the Tower
-    var builderTitleArrayMax = data.builder_name[0].length;
+    var builderTitleArrayMax = data.titles[0].length;
     var builderNameArrayMax = data.builder_name[1].length;
+    // Get a title
+    this.name = data.titles[0][Math.floor(Math.random() * builderTitleArrayMax)] + " "
     // Get a first name
-    this.name = data.builder_name[0][Math.floor(Math.random() * builderTitleArrayMax)] + " "
     + data.builder_name[1][random.randomInt(builderNameArrayMax)] + "'s "
+    // Get a tower type
     + data.name_suffix[Math.floor(Math.random() * data.name_suffix.length)];
 
   }
@@ -244,32 +246,41 @@ var data = {
     "Janky", "Dank", "Serene"
   ],
 
+// Titles [0] Gender Neutral, [1] Male-centric, [2] Female-centric
+  titles: [
+    [
+    // Gender Neutral
+    "Grand Master", "Grand Vizier", "Maester", "Regent", "Artificer",
+    "Archmage", "General", "Admiral", "Advisor", "Treasurer", "Keeper",
+    "Ranger General", "Master of Coin", "Portmaster", "Warden", "Mayor"
+    ], [
+    // Male-centric
+    "King", "Prince", "Earl", "Lord", "Baron", "Duke",
+    ], [
+    // Female-centric
+    "Queen", "Princess", "Countess", "Lady", "Baroness", "Duchess",
+    ]
+  ],
+
   // Builder name array
   // [0] Title
   // [1] name TODO Make names gender specific? For use of correct identifer (he, she etc)
   builder_name: [
-    // Titles
-    [
-      "Grand Master", "Grand Vizier", "Queen", "King", "Prince", "Princess",
-      "Earl", "Lord", "Baron",
-      "Duke", "Maester", "Regent", "Artificer", "Archmage", "General", "Admiral",
-      "Advisor", "Treasurer", "Keeper", "Ranger General", "Master of Coin", "Portmaster",
-      "Warden", "Mayor"
-    ],
-    // Names
-    [
+      [
+      // Genderless Names
+      ], [
       // Male
       "Harold", "Elrond", "Thrall", "Legolas", "Aragorn", "Frodo", "Gandelf",
       "Kael' Thas", "Zul'jin", "Anduin", "Varian", "Durzo", "Kvothe", "Abenthy",
       "Simmon", "Wilem", "Elodin", "Ambrose",
       "Merlin", "Solomon",
+      ], [
       // Female
       "Cleopatra", "Galadriel", "Arwen", "Denna", "Fela", "Devi", "Auri", "Lanre",
       "Rapunzel", "Cinderella", "Moana", "Elsa", "Arya", "Sansa", "Cersei", "Daenerys",
       "Ella", "Sylvanas", "Valla", "Li Li", "Johanna", "Brienne"
-    ]
+      ]
   ],
-
   // Second part for the name of the tower, when "tower" just won't do!
   name_suffix : [
     "Spire", "Rise", "Parapet", "Column", "Turret", "Stronghold", "Keep", "Obelisk",
